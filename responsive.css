@@ -1,0 +1,27 @@
+/* Homepage responsive styling */
+@media (max-width: 815px) {
+	footer .site-info {
+		position: static;
+	}
+	#home-row {
+		position: static;
+	}
+	.home-subrow {
+		margin-bottom: 25px;
+		display: block;
+	}
+}
+@media (max-width: 400px) {
+	.home-subrow {
+		margin-bottom: 0;
+	}
+	.post-item div {
+		margin-bottom: 10px;
+	}
+	.post-item div, #more button {
+		opacity: 1;
+	}
+	.post-item div:hover, #more button:hover {
+		bottom: 0;
+	}
+}
