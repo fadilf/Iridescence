@@ -12,13 +12,11 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'iridescence' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'iridescence' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'iridescence' ), 'Iridescence', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
+			Copyright &copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. <?php printf( __( 'Theme %1$s by %2$s.', 'iridescence' ), 'Iridescence', '<a href="http://fadilf.github.io/" rel="designer">Fadil Eledath</a>' ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
-
+<div id="blur"></div>
 <?php wp_footer(); ?>
 
 </body>

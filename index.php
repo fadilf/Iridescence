@@ -19,7 +19,7 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>
-			<?php if ($_SERVER["REQUEST_METHOD"] == "POST"): ?>
+			<?php if (isset($_GET["more"])): ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php
@@ -34,7 +34,7 @@ get_header(); ?>
 			<?php iridescence_paging_nav(); ?>
 			<?php else: ?>
 			<div id="home-row">
-			<form id="more" action="<?php echo esc_url( home_url( '/' ) ); ?>" method="POST">
+			<form id="more" action="<?php echo esc_url( home_url( '/' ) ); ?>" method="GET">
 			<div class="home-subrow">
 			<?php for ($i=0;$i<3;$i++) : the_post(); ?>
 				<a href="<?php the_permalink(); ?>" class="post-item">
@@ -45,6 +45,7 @@ get_header(); ?>
 			</div><div id="subrow2" class="home-subrow">
 			<?php endif; ?>
 			<?php endfor; ?>
+			<input type="hidden" name="more" value="true" />
 			<button type="submit">+</button>
 			</div>
 		</form></div>

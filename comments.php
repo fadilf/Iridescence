@@ -63,7 +63,7 @@ if ( post_password_required() ) {
 	?>
 		<p class="no-comments"><?php _e( 'Comments are closed.', 'iridescence' ); ?></p>
 	<?php endif; ?>
-
-	<?php comment_form(); ?>
+	<?php $iridfields = array('comment_notes_after' => ''); ?>
+	<?php comment_form($iridfields); ?>
 
 </div><!-- #comments -->

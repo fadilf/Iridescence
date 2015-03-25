@@ -116,7 +116,7 @@ function iridescence_entry_footer() {
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 		echo '<span class="comments-link">';
 		comments_popup_link( __( 'Leave a comment', 'iridescence' ), __( '1 Comment', 'iridescence' ), __( '% Comments', 'iridescence' ) );
-		echo '</span>';
+		echo '</span>&nbsp;';
 	}
 
 	edit_post_link( __( 'Edit', 'iridescence' ), '<span class="edit-link">', '</span>' );

@@ -27,7 +27,7 @@
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . __( 'Pages:', 'iridescence' ),
-				'after'  => '</div>',
+				'after'  => '</div>&nbsp;',
 			) );
 		?>
 	</div><!-- .entry-content -->

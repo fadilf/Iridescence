@@ -1,17 +1,19 @@
 /* Homepage responsive styling */
 @media (max-width: 815px) {
+	.home-subrow {
+		margin-bottom: 25px;
+		display: block;
+	}
+}
+@media (max-width: 815px) and (max-height: 567px) {
 	footer .site-info {
 		position: static;
 	}
 	#home-row {
 		position: static;
 	}
-	.home-subrow {
-		margin-bottom: 25px;
-		display: block;
-	}
 }
-@media (max-width: 400px) {
+@media (max-width: 425px) {
 	.home-subrow {
 		margin-bottom: 0;
 	}
@@ -19,9 +21,38 @@
 		margin-bottom: 10px;
 	}
 	.post-item div, #more button {
-		opacity: 1;
+		opacity: 0.9;
 	}
 	.post-item div:hover, #more button:hover {
 		bottom: 0;
 	}
+	footer .site-info {
+		position: static;
+	}
+	#home-row {
+		position: static;
+	}
 }
+/* End of Homepage styling */
+/* Page and Post styling */
+@media (min-width: 991px) {
+	#primary {
+		border-right: 4px solid rgba(0,0,0,0.5);
+	}
+}
+@media (max-width: 991px) {
+	.widget {
+		display: inline-block;
+		vertical-align: top;
+		margin: 10px;
+		text-align: left;
+		border-top: 10px solid rgba(0,0,0,0.3);
+	}
+	#secondary {
+		margin-top: 20px;
+		text-align: center;
+		border-top: 4px solid rgba(0,0,0,0.3);
+		border-botttom: 4px solid rgba(0,0,0,0.3);
+	}
+}
+/* End of page and Post styling */

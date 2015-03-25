@@ -10,28 +10,42 @@
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-<link href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.1/yeti/bootstrap.min.css" rel="stylesheet">
-<link href="//fonts.googleapis.com/css?family=Roboto:100|Open+Sans" rel="stylesheet">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-<?php if(is_home() && $_SERVER['REQUEST_METHOD'] != "POST"): ?>
+<?php if(is_home() && !isset($_GET["more"])): ?>
 	<style>
 	footer .site-info {
 		position: absolute;
 		bottom: 0px;
-		background: rgba(0, 0, 0, 0.5);
-	}
-	.navbar-default, .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav> .active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-		background: rgba(0, 0, 0, 0.5) !important;
 	}
 	</style>
 	<?php else: ?>
 	<style>
 	#primary {
 		padding: 0 30px;
+		margin-bottom: 10px;
+	}
+	#blur {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		z-index: 2;
+		transition: 0.5s;
+		background-attachment: fixed !important;
+		background-size: cover !important;
+		-webkit-filter: blur(4px);
+		filter: blur(4px);
+	}
+	#page {
+		z-index: 3;
+		position: relative;
+	}
+	#content {
+		background-color: rgba(0, 0, 0, 0.5);
+		color: #fff;
 	}
 	</style>
 <?php endif; ?>
