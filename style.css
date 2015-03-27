@@ -3,22 +3,17 @@ Theme Name: Iridescence
 Theme URI: http://underscores.me/
 Author: Fadil Eledath
 Author URI: http://fadilf.github.io/
-Description: A responsive, minimal and modern theme for WordPress by Fadil Eledath.
+Description: A responsive, minimal, modern and blue theme for WordPress by Fadil Eledath featuring translucent backgrounds and font-awesome.
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: iridescence
-Tags: modern, responsive, minimal, theme, WordPress, cool
+Tags: responsive-layout, translucent, photography, image-rich, right-sidebar, blue, font-awesome
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
  Iridescence is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
-
-Resetting and rebuilding styles have been helped along thanks to the fine work of
-Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
-along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
-and Blueprint http://www.blueprintcss.org/
 */
 
 /*--------------------------------------------------------------
@@ -43,6 +38,7 @@ and Blueprint http://www.blueprintcss.org/
 12.0 Media
 	12.1 Captions
 	12.2 Galleries
+13.0 Extra
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
